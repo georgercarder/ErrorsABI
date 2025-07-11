@@ -24,6 +24,27 @@ export const ErrorsABI = [
 ];
 ```
 
+.. then in error handling where there may be a contract revert
+
+```
+// ...
+
+import {ErrorsABI} from <DESIRED_TARGET_FILEPATH>;
+
+    try {
+        // ...
+    } catch (err) {
+        if (err.data) {
+            const errs = new ethers.Contract(ethers.ZeroAddress, ErrorsABI, /*signer*/ ) 
+            const decodedError = errs.interface.parseError(err.data);
+
+            // use this ^^
+
+        }
+    }
+```
+
+
 Please make git issues if you find breakage or areas for improvement.
 
 
