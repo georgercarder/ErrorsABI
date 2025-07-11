@@ -6,7 +6,7 @@
 
 In root of a forge project, run
 
-`./update_errors_abi.sh` <DESIRED_TARGET_FILEPATH>
+`./update_errors_abi.sh` <DESIRED_RESULTING_FILEPATH>
 
 Resulting file will look like:
 
@@ -29,7 +29,7 @@ export const ErrorsABI = [
 ```
 // ...
 
-import {ErrorsABI} from <DESIRED_TARGET_FILEPATH>;
+import {ErrorsABI} from <DESIRED_RESULTING_FILEPATH>;
 
 // ...
 
