@@ -16,7 +16,7 @@ Resulting file will look like:
 export const ErrorsABI = [
  { 
     "type": "error",
-    "name": "NotOwner_error",
+    "name": "ExampleCustom_error",
     "inputs": []
   },
 
