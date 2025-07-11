@@ -31,6 +31,8 @@ export const ErrorsABI = [
 
 import {ErrorsABI} from <DESIRED_TARGET_FILEPATH>;
 
+// ...
+
     try {
         // ...
     } catch (err) {
@@ -42,7 +44,11 @@ import {ErrorsABI} from <DESIRED_TARGET_FILEPATH>;
 
         }
     }
+
+// ...
 ```
+
+--------------------------------------------------
 
 
 Please make git issues if you find breakage or areas for improvement.
