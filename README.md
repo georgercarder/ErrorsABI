@@ -24,7 +24,7 @@ export const ErrorsABI = [
 ];
 ```
 
-.. then in error handling where there may be a contract revert
+.. then in frontent javascript error handling where there may be a contract revert
 
 ```
 // ...
